@@ -1,12 +1,15 @@
 <template>
   <header>
-    <h1>Task Trackers</h1>
+    <h1>{{title}}</h1>
   </header>
 </template>
 <script>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Header",
+  props: {
+    title: String
+  }
 };
 </script>
 <style scoped>
