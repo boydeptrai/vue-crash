@@ -1,16 +1,19 @@
 <template>
   <div class="container">
     <Header title = "Task Tracker"/>
+    <Tasks :tasks ="tasks" />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import Tasks  from './components/Tasks.vue'
 export default {
   name: "App",
   components: {
     // eslint-disable-next-line vue/no-unused-components
-    Header
+    Header,
+    Tasks
   },
   data() {
     return {
