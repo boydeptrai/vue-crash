@@ -10,8 +10,8 @@ export default {
         color: String
     },
     methods: {
-        onclick() {
-            
+        onClick(){
+            this.$emit('btn-click')
         }
     }
 }
